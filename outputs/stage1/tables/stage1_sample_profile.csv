@@ -1,0 +1,18 @@
+﻿Variable,Group,n,%
+AGE,18-22,409,80.2
+AGE,23-27,78,15.3
+AGE,28+,23,4.5
+GAME,Genshin,151,29.6
+GAME,HSR,81,15.9
+GAME,WuWa,26,5.1
+GAME,ZZZ,219,42.9
+GAME,Other,33,6.5
+TENURE,Less than 6 months,35,6.9
+TENURE,6-12 months,35,6.9
+TENURE,1-2 years,137,26.9
+TENURE,More than 2 years,303,59.4
+STATUS,"Active, playing as usual",382,74.9
+STATUS,Playing much less than before,111,21.8
+STATUS,Quit in the last 6 months,17,3.3
+PAYER,Has ever spent,356,69.8
+PAYER_NOW,Spends monthly,292,57.3

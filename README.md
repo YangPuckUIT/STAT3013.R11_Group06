@@ -6,7 +6,7 @@ Project title: *The Effects of Randomness, Pity Mechanisms, and Pricing on Playe
 
 This repository holds the analysis code, data and outputs for the group project. The report answers five questions in five stages, using 510 cleaned survey responses and monthly revenue data for Genshin Impact and Honkai: Star Rail.
 
-> **Status:** this repository currently contains **Stage 1 (Descriptive)** and **Stage 2 (Inferential)**. Other stages will be added by their owners.
+> **Status:** this repository currently contains **Stage 1 (Descriptive)**, **Stage 2 (Inferential)**, **Stage 3 (Regression)** and **Stage 5 (ML forecasting)**. Other stages will be added by their owners.
 
 ## The five stages
 
@@ -84,21 +84,52 @@ Spearman confidence intervals are bootstrap percentile intervals (5,000 resample
 
 All tables and figures are written to `outputs/stage2/`.
 
+## Stage 5 results
+
+**Data.** Monthly GLOBAL mobile revenue (Sensor Tower estimates via revenue.ennead.cc, USD, excluding China): Genshin Impact 2022-12 to 2026-09 (46 months) and Honkai: Star Rail 2023-04 to 2026-09 (42 months). Banner variables (`BANNER`, `HOT_CHAR`, `PROMO_EVENT`, 0/1 per month) were coded by hand from public banner histories. Sources and coding rules: `Dataset/stage5_sources.md`.
+
+**Models.** ARIMA on log revenue, one model per game (baseline): ARIMA(1,1,2) for Genshin and ARIMA(0,1,1) for HSR, Ljung–Box p > 0.05 for both. LightGBM pooled over both games with revenue lags 1–3 and game, run without and with the banner variables (parameters fixed in advance, seed 42).
+
+**Evaluation.** Rolling-origin one-month-ahead forecasts over the last 12 months (2025-10 to 2026-09).
+
+| Game | Approach | RMSE (million USD) | MAPE (%) |
+|---|---|---|---|
+| Genshin | ARIMA | 6.96 | 28.3 |
+| Genshin | LightGBM without banner | 7.13 | 32.8 |
+| Genshin | LightGBM with banner | 6.43 | 30.3 |
+| HSR | ARIMA | 7.60 | 53.7 |
+| HSR | LightGBM without banner | 8.19 | 58.4 |
+| HSR | LightGBM with banner | 8.24 | 54.9 |
+
+Banner variables tend to improve the Genshin forecast (RMSE 9.9% lower than LightGBM without them, 7.7% lower than ARIMA) but bring almost no improvement for HSR, where a new 5-star character debuts in 40 of 42 months. MAPE is high for HSR because revenue fell to USD 5 million in 2026-01. With 12 evaluation months per game, these differences are tendencies, not firm conclusions.
+
+All tables and figures are written to `outputs/stage5/`.
+
 ## Repository structure
 
 ```
 .
 ├── Data_Analysis/
 │   ├── Stage1_Descriptive.ipynb   # Stage 1 notebook
-│   └── Stage2_Inferential.ipynb   # Stage 2 notebook (single notebook)
+│   ├── Stage2_Inferential.ipynb   # Stage 2 notebook (single notebook)
+│   ├── Stage3_Regression.ipynb    # Stage 3 notebook
+│   └── Stage5_Forecasting.ipynb   # Stage 5 notebook
 ├── Dataset/
-│   └── gacha_clean.csv            # cleaned survey data (510 rows)
+│   ├── gacha_clean.csv            # cleaned survey data (510 rows)
+│   ├── revenue_monthly.csv        # Stage 5: monthly GLOBAL revenue (input)
+│   ├── banner_calendar.csv        # Stage 5: banner variables (input)
+│   ├── stage5_data.csv            # Stage 5: merged dataset (built by the notebook)
+│   └── stage5_sources.md          # Stage 5: data sources and coding rules
 ├── outputs/
 │   ├── stage1/                    # sample_profile, scale_scores, lorenz_curve (PNG) + 4 tables (CSV)
 │   └── stage2/
 │       ├── figures/               # spearman_forest, promotion_by_spending_group, sat_by_game (PNG)
 │       └── tables/                # stage2_results, stage2_dunn_posthoc,
-│                                  # stage2_sensitivity_sat2, stage2_sensitivity_h5_six_levels (CSV)
+│   │                              # stage2_sensitivity_sat2, stage2_sensitivity_h5_six_levels (CSV)
+│   └── stage5/
+│       ├── figures/               # arima_forecast, lightgbm_forecast, forecast_comparison (PNG)
+│       └── tables/                # stage5_data_summary, stage5_arima_*, stage5_lgbm_*,
+│                                  # stage5_metrics, stage5_banner_effect, stage5_forecasts_all (CSV)
 ├── requirements.txt
 └── README.md
 ```
@@ -116,6 +147,8 @@ pip install -r requirements.txt
 Open `Data_Analysis/Stage2_Inferential.ipynb` in VS Code, select the `.venv` kernel and choose **Restart and Run All**. The notebook reads `Dataset/gacha_clean.csv` and writes its tables and figures to `outputs/stage2/`.
 
 Run `Data_Analysis/Stage1_Descriptive.ipynb` the same way; it writes its tables and figures to `outputs/stage1/`.
+
+Run `Data_Analysis/Stage5_Forecasting.ipynb` the same way; it reads `Dataset/revenue_monthly.csv` and `Dataset/banner_calendar.csv`, builds `Dataset/stage5_data.csv` and writes its tables and figures to `outputs/stage5/`. LightGBM uses a fixed seed, so reruns give identical results.
 
 ## Limitations
 

@@ -1,0 +1,15 @@
+result,statistic,value,p,note
+Sample,Respondents in model,510,,
+Age group (per step up),Odds ratio (95% CI),2.74 (1.97-3.81),<0.001,significant
+Perceived price fairness (per point),Odds ratio (95% CI),1.29 (1.02-1.63),0.031,significant
+Perceived pity fairness (per point),Odds ratio (95% CI),0.77 (0.62-0.95),0.014,significant
+Satisfaction (per point),Odds ratio (95% CI),1.13 (0.90-1.41),0.283,not significant
+Perceived luck (per point),Odds ratio (95% CI),1.11 (0.92-1.34),0.260,not significant
+Tenure (per step up),Odds ratio (95% CI),1.15 (0.94-1.39),0.166,not significant
+Model fit,McFadden R2 (main model),0.035,,low: attitudes explain little of spending
+Reference model,McFadden R2 with INT added,0.214,,"INT OR = 3.31; INT nearly restates spending, so excluded"
+Multicollinearity,Highest VIF,1.63 (PITY2),,below 5: no problem
+Proportional odds,Brant omnibus chi2 (df),15.43 (12),0.219,assumption holds
+Predicted: spends 300k+,18-22 vs 28+,7.1% vs 36.5%,,other predictors at their mean
+Predicted: spends nothing,18-22 vs 28+,47.7% vs 10.8%,,other predictors at their mean
+Caution,Respondents aged 28+,23,,small group: age estimate less precise at the top

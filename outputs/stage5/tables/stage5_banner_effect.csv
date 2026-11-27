@@ -1,0 +1,5 @@
+GAME,COMPARED_WITH,RMSE_change_%,MAPE_change_pp
+Genshin,LightGBM without banner,-9.9,-2.4
+Genshin,ARIMA,-7.7,2.0
+HSR,LightGBM without banner,0.6,-3.5
+HSR,ARIMA,8.4,1.2

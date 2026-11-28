@@ -1,0 +1,11 @@
+GAME,VARIABLES,RMSE_MUSD,MAPE_%,RMSE_CHANGE_VS_NO_BANNER_%
+Genshin,none (LightGBM without banner),7.13,32.76,0.0
+Genshin,BANNER,7.29,30.97,2.21
+Genshin,HOT_CHAR,7.77,35.76,8.98
+Genshin,PROMO_EVENT,5.85,29.44,-17.87
+Genshin,all three (LightGBM with banner),6.43,30.32,-9.85
+HSR,none (LightGBM without banner),8.19,58.36,0.0
+HSR,BANNER,8.49,54.89,3.68
+HSR,HOT_CHAR,7.64,50.16,-6.72
+HSR,PROMO_EVENT,8.0,57.89,-2.36
+HSR,all three (LightGBM with banner),8.24,54.9,0.58

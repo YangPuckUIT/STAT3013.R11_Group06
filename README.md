@@ -1,22 +1,21 @@
 # Randomness, Pity Mechanisms, and Pricing in Gacha Games
 
-**STAT3013 group project**
+STAT3013 group project
 
-Project title: *The Effects of Randomness, Pity Mechanisms, and Pricing on Player Satisfaction and Spending in Gacha Games: Implications for Game Revenue*
+**Project title:** The Effects of Randomness, Pity Mechanisms, and Pricing on Player Satisfaction and Spending in Gacha Games: Implications for Game Revenue
 
-This repository holds the analysis code, data and outputs for the group project. The report answers five questions in five stages, using 510 cleaned survey responses and monthly revenue data for Genshin Impact and Honkai: Star Rail.
+This repository holds the analysis code, data and outputs for the group project. The report answers six research questions in six stages, using 510 cleaned survey responses and monthly revenue data for Genshin Impact and Honkai: Star Rail.
 
-> **Status:** this repository currently contains **Stage 1 (Descriptive)**, **Stage 2 (Inferential)**, **Stage 3 (Regression)** and **Stage 5 (ML forecasting)**. Other stages will be added by their owners.
-
-## The five stages
+## The six stages
 
 | Stage | Question | Methods |
 |---|---|---|
-| 1. Descriptive | Who are the players, how much do they spend, is spending concentrated? | Descriptive statistics, Gini, Lorenz curve |
-| 2. Inferential | Are the links seen in the sample real, or due to chance? | Spearman, chi-square, Holm correction |
+| 1. Descriptive | Who are the players, how much do they spend, is spending concentrated? | Descriptive statistics, Cronbach's alpha, Gini, Lorenz curve |
+| 2. Inferential | Are luck, pity and price linked to satisfaction, and satisfaction to continued play? | Spearman, chi-square, Holm correction |
 | 3. Regression | Which factors are associated with higher spending? | Ordered logit |
 | 4. Satisfaction | Do players who spend more also feel more satisfied? | % satisfied with Wilson 95% CI |
-| 5. ML forecasting | Do new-character banners improve the revenue forecast? | ARIMA, LightGBM |
+| 5. ML forecasting | Do new-character banners improve the revenue forecast? | ARIMA, ARIMAX, LightGBM |
+| 6. Classification | Which factors help identify players who are playing less or have quit? | Logistic regression, random forest |
 
 We write "is associated with", not "causes": the survey is a one-time snapshot.
 

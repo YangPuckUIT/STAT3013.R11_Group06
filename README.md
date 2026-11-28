@@ -90,6 +90,15 @@ All tables and figures are written to `outputs/stage2/`.
 
 **Models.** ARIMA on log revenue, one model per game (baseline): ARIMA(1,1,2) for Genshin and ARIMA(0,1,1) for HSR, Ljung–Box p > 0.05 for both. ARIMAX uses the same orders with `BANNER`, `HOT_CHAR` and `PROMO_EVENT` as exogenous regressors (Ljung–Box p > 0.05 for both). LightGBM pooled over both games with revenue lags 1–3 and game, run without and with the banner variables (parameters fixed in advance, seed 42).
 
+| Approach | Input variables | Number |
+|---|---|---|
+| ARIMA | Past revenue of the same game only | 1 series |
+| ARIMAX | Past revenue + BANNER, HOT_CHAR, PROMO_EVENT | 1 series + 3 |
+| LightGBM without banner | LAG1, LAG2, LAG3, GAME | 4 |
+| LightGBM with banner | LAG1, LAG2, LAG3, GAME, BANNER, HOT_CHAR, PROMO_EVENT | 7 |
+
+`variables_timeline.png` plots revenue with the months in which each banner variable equals 1; `variables_effect.png` shows the ARIMAX coefficients (with p-values) and the LightGBM gain share of every variable.
+
 **Evaluation.** Rolling-origin one-month-ahead forecasts over the last 12 months (2025-10 to 2026-09).
 
 | Game | Approach | RMSE (million USD) | MAPE (%) |
@@ -129,7 +138,8 @@ All tables and figures are written to `outputs/stage5/`.
 │       └── tables/                # stage2_results, stage2_dunn_posthoc,
 │   │                              # stage2_sensitivity_sat2, stage2_sensitivity_h5_six_levels (CSV)
 │   └── stage5/
-│       ├── figures/               # arima_forecast, lightgbm_forecast, forecast_comparison (PNG)
+│       ├── figures/               # arima_forecast, lightgbm_forecast, forecast_comparison,
+│       │                          # variables_timeline, variables_effect (PNG)
 │       └── tables/                # stage5_data_summary, stage5_arima_*, stage5_arimax_*, stage5_lgbm_*,
 │                                  # stage5_metrics, stage5_banner_effect, stage5_forecasts_all (CSV)
 ├── requirements.txt

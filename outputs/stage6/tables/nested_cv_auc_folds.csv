@@ -1,0 +1,201 @@
+Model,Feature set,Repeat,Fold,Tuned AUC,Selected parameters
+Logistic Regression,Original 9,1,1,0.7044534412955465,{'model__C': 0.3}
+Logistic Regression,Original 9,1,2,0.6123481781376519,{'model__C': 0.1}
+Logistic Regression,Original 9,1,3,0.7282388663967612,{'model__C': 0.3}
+Logistic Regression,Original 9,1,4,0.6966233766233766,{'model__C': 0.3}
+Logistic Regression,Original 9,1,5,0.7085714285714286,{'model__C': 0.03}
+Logistic Regression,Original 9,2,1,0.6968623481781377,{'model__C': 0.1}
+Logistic Regression,Original 9,2,2,0.667004048582996,{'model__C': 0.3}
+Logistic Regression,Original 9,2,3,0.6978744939271255,{'model__C': 0.3}
+Logistic Regression,Original 9,2,4,0.6825974025974025,{'model__C': 0.03}
+Logistic Regression,Original 9,2,5,0.7750649350649351,{'model__C': 1.0}
+Logistic Regression,Original 9,3,1,0.6720647773279352,{'model__C': 0.1}
+Logistic Regression,Original 9,3,2,0.6482793522267206,{'model__C': 0.03}
+Logistic Regression,Original 9,3,3,0.8107287449392712,{'model__C': 0.1}
+Logistic Regression,Original 9,3,4,0.694025974025974,{'model__C': 0.1}
+Logistic Regression,Original 9,3,5,0.6758441558441558,{'model__C': 0.1}
+Logistic Regression,Original 9,4,1,0.7079959514170041,{'model__C': 0.03}
+Logistic Regression,Original 9,4,2,0.6270242914979757,{'model__C': 0.1}
+Logistic Regression,Original 9,4,3,0.7682186234817814,{'model__C': 0.3}
+Logistic Regression,Original 9,4,4,0.6670129870129871,{'model__C': 0.03}
+Logistic Regression,Original 9,4,5,0.723116883116883,{'model__C': 1.0}
+Logistic Regression,Original 9,5,1,0.708502024291498,{'model__C': 0.03}
+Logistic Regression,Original 9,5,2,0.8016194331983806,{'model__C': 0.3}
+Logistic Regression,Original 9,5,3,0.687753036437247,{'model__C': 0.1}
+Logistic Regression,Original 9,5,4,0.652987012987013,{'model__C': 0.03}
+Logistic Regression,Original 9,5,5,0.6607792207792208,{'model__C': 0.03}
+Logistic Regression,Original 9,6,1,0.6503036437246963,{'model__C': 0.3}
+Logistic Regression,Original 9,6,2,0.6219635627530365,{'model__C': 0.1}
+Logistic Regression,Original 9,6,3,0.7186234817813766,{'model__C': 1.0}
+Logistic Regression,Original 9,6,4,0.6644155844155845,{'model__C': 0.03}
+Logistic Regression,Original 9,6,5,0.749090909090909,{'model__C': 0.1}
+Logistic Regression,Original 9,7,1,0.8031376518218624,{'model__C': 0.1}
+Logistic Regression,Original 9,7,2,0.6907894736842106,{'model__C': 0.03}
+Logistic Regression,Original 9,7,3,0.7029352226720648,{'model__C': 0.3}
+Logistic Regression,Original 9,7,4,0.6057142857142858,{'model__C': 0.3}
+Logistic Regression,Original 9,7,5,0.6945454545454546,{'model__C': 0.03}
+Logistic Regression,Original 9,8,1,0.6730769230769231,{'model__C': 0.3}
+Logistic Regression,Original 9,8,2,0.7535425101214575,{'model__C': 0.3}
+Logistic Regression,Original 9,8,3,0.6730769230769231,{'model__C': 0.1}
+Logistic Regression,Original 9,8,4,0.6379220779220779,{'model__C': 0.03}
+Logistic Regression,Original 9,8,5,0.6628571428571428,{'model__C': 1.0}
+Logistic Regression,Original 9,9,1,0.7049595141700405,{'model__C': 0.1}
+Logistic Regression,Original 9,9,2,0.7069838056680161,{'model__C': 1.0}
+Logistic Regression,Original 9,9,3,0.6857287449392713,{'model__C': 1.0}
+Logistic Regression,Original 9,9,4,0.6285714285714286,{'model__C': 0.3}
+Logistic Regression,Original 9,9,5,0.6581818181818182,{'model__C': 0.1}
+Logistic Regression,Original 9,10,1,0.7292510121457491,{'model__C': 0.1}
+Logistic Regression,Original 9,10,2,0.5840080971659919,{'model__C': 0.3}
+Logistic Regression,Original 9,10,3,0.7611336032388665,{'model__C': 0.1}
+Logistic Regression,Original 9,10,4,0.7002597402597402,{'model__C': 0.1}
+Logistic Regression,Original 9,10,5,0.6774025974025975,{'model__C': 0.3}
+Random Forest,Original 9,1,1,0.6988866396761133,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,1,2,0.6244939271255061,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,1,3,0.6766194331983806,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,1,4,0.731948051948052,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,1,5,0.7345454545454545,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,2,1,0.6882591093117408,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,2,2,0.6234817813765182,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,2,3,0.7267206477732793,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,2,4,0.6301298701298701,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,2,5,0.7402597402597403,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,3,1,0.6826923076923077,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,3,2,0.6654858299595142,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,3,3,0.7768218623481781,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,3,4,0.6763636363636364,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,3,5,0.6732467532467533,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,4,1,0.7039473684210527,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,4,2,0.6098178137651822,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Original 9,4,3,0.7889676113360324,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,4,4,0.6638961038961039,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,4,5,0.6794805194805196,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Original 9,5,1,0.680161943319838,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,5,2,0.763157894736842,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Original 9,5,3,0.6953441295546559,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,5,4,0.6166233766233766,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,5,5,0.5755844155844156,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,6,1,0.6189271255060729,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Original 9,6,2,0.5794534412955465,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,6,3,0.7479757085020242,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,6,4,0.6732467532467532,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,6,5,0.7075324675324676,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,7,1,0.8026315789473685,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,7,2,0.6761133603238867,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,7,3,0.6725708502024291,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,7,4,0.5475324675324675,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,7,5,0.6374025974025974,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,8,1,0.5860323886639676,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,8,2,0.6892712550607287,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Original 9,8,3,0.6563765182186235,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,8,4,0.6415584415584416,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,8,5,0.6654545454545455,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,9,1,0.645242914979757,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,9,2,0.715587044534413,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,9,3,0.7120445344129555,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,9,4,0.6192207792207792,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,9,5,0.6348051948051949,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,10,1,0.7206477732793523,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,10,2,0.5910931174089068,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,10,3,0.7226720647773279,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Original 9,10,4,0.7038961038961039,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Original 9,10,5,0.6784415584415584,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Logistic Regression,Expanded 14,1,1,0.6938259109311742,{'model__C': 1.0}
+Logistic Regression,Expanded 14,1,2,0.638663967611336,{'model__C': 0.1}
+Logistic Regression,Expanded 14,1,3,0.7737854251012146,{'model__C': 0.03}
+Logistic Regression,Expanded 14,1,4,0.6893506493506493,{'model__C': 0.1}
+Logistic Regression,Expanded 14,1,5,0.7532467532467532,{'model__C': 0.03}
+Logistic Regression,Expanded 14,2,1,0.7277327935222672,{'model__C': 0.1}
+Logistic Regression,Expanded 14,2,2,0.652834008097166,{'model__C': 0.03}
+Logistic Regression,Expanded 14,2,3,0.7403846153846153,{'model__C': 0.03}
+Logistic Regression,Expanded 14,2,4,0.6706493506493506,{'model__C': 0.03}
+Logistic Regression,Expanded 14,2,5,0.7781818181818181,{'model__C': 0.1}
+Logistic Regression,Expanded 14,3,1,0.673582995951417,{'model__C': 0.03}
+Logistic Regression,Expanded 14,3,2,0.6842105263157895,{'model__C': 0.03}
+Logistic Regression,Expanded 14,3,3,0.8157894736842105,{'model__C': 0.03}
+Logistic Regression,Expanded 14,3,4,0.774025974025974,{'model__C': 0.03}
+Logistic Regression,Expanded 14,3,5,0.6519480519480519,{'model__C': 0.03}
+Logistic Regression,Expanded 14,4,1,0.7575910931174089,{'model__C': 0.03}
+Logistic Regression,Expanded 14,4,2,0.6624493927125507,{'model__C': 0.1}
+Logistic Regression,Expanded 14,4,3,0.7839068825910932,{'model__C': 0.3}
+Logistic Regression,Expanded 14,4,4,0.6384415584415585,{'model__C': 0.03}
+Logistic Regression,Expanded 14,4,5,0.7438961038961038,{'model__C': 0.1}
+Logistic Regression,Expanded 14,5,1,0.7181174089068826,{'model__C': 0.03}
+Logistic Regression,Expanded 14,5,2,0.8208502024291497,{'model__C': 0.03}
+Logistic Regression,Expanded 14,5,3,0.7120445344129555,{'model__C': 0.03}
+Logistic Regression,Expanded 14,5,4,0.6935064935064935,{'model__C': 0.03}
+Logistic Regression,Expanded 14,5,5,0.6898701298701299,{'model__C': 0.03}
+Logistic Regression,Expanded 14,6,1,0.6644736842105263,{'model__C': 0.03}
+Logistic Regression,Expanded 14,6,2,0.6351214574898786,{'model__C': 0.03}
+Logistic Regression,Expanded 14,6,3,0.7373481781376519,{'model__C': 0.3}
+Logistic Regression,Expanded 14,6,4,0.7454545454545454,{'model__C': 0.03}
+Logistic Regression,Expanded 14,6,5,0.7574025974025974,{'model__C': 0.03}
+Logistic Regression,Expanded 14,7,1,0.7904858299595141,{'model__C': 0.1}
+Logistic Regression,Expanded 14,7,2,0.7474696356275304,{'model__C': 0.03}
+Logistic Regression,Expanded 14,7,3,0.6619433198380567,{'model__C': 0.03}
+Logistic Regression,Expanded 14,7,4,0.6036363636363636,{'model__C': 0.1}
+Logistic Regression,Expanded 14,7,5,0.7324675324675325,{'model__C': 0.03}
+Logistic Regression,Expanded 14,8,1,0.7692307692307694,{'model__C': 0.1}
+Logistic Regression,Expanded 14,8,2,0.7732793522267207,{'model__C': 0.03}
+Logistic Regression,Expanded 14,8,3,0.6837044534412955,{'model__C': 0.03}
+Logistic Regression,Expanded 14,8,4,0.64,{'model__C': 0.1}
+Logistic Regression,Expanded 14,8,5,0.6857142857142857,{'model__C': 0.3}
+Logistic Regression,Expanded 14,9,1,0.7100202429149798,{'model__C': 0.03}
+Logistic Regression,Expanded 14,9,2,0.7737854251012146,{'model__C': 0.03}
+Logistic Regression,Expanded 14,9,3,0.7257085020242915,{'model__C': 0.03}
+Logistic Regression,Expanded 14,9,4,0.6909090909090909,{'model__C': 0.3}
+Logistic Regression,Expanded 14,9,5,0.6561038961038961,{'model__C': 0.1}
+Logistic Regression,Expanded 14,10,1,0.7105263157894737,{'model__C': 0.03}
+Logistic Regression,Expanded 14,10,2,0.6077935222672064,{'model__C': 0.03}
+Logistic Regression,Expanded 14,10,3,0.770242914979757,{'model__C': 0.03}
+Logistic Regression,Expanded 14,10,4,0.7506493506493507,{'model__C': 0.03}
+Logistic Regression,Expanded 14,10,5,0.6706493506493507,{'model__C': 0.1}
+Random Forest,Expanded 14,1,1,0.7393724696356275,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Expanded 14,1,2,0.6513157894736842,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Expanded 14,1,3,0.6902834008097166,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,1,4,0.7350649350649351,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,1,5,0.7683116883116883,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Expanded 14,2,1,0.7191295546558705,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,2,2,0.6518218623481782,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,2,3,0.7646761133603239,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,2,4,0.6415584415584416,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Expanded 14,2,5,0.7262337662337662,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,3,1,0.6472672064777327,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,3,2,0.7044534412955465,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,3,3,0.7596153846153846,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Expanded 14,3,4,0.7225974025974026,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,3,5,0.6612987012987013,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Expanded 14,4,1,0.7135627530364372,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,4,2,0.6604251012145749,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,4,3,0.826417004048583,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Expanded 14,4,4,0.6296103896103896,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,4,5,0.6997402597402598,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,5,1,0.6816801619433199,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,5,2,0.8314777327935222,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,5,3,0.6897773279352227,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,5,4,0.6810389610389611,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,5,5,0.6353246753246754,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,6,1,0.646761133603239,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,6,2,0.6067813765182186,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Expanded 14,6,3,0.7368421052631579,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,6,4,0.7636363636363637,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,6,5,0.745974025974026,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,7,1,0.8021255060728745,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,7,2,0.7484817813765182,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,7,3,0.646761133603239,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,7,4,0.5402597402597402,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Expanded 14,7,5,0.6815584415584416,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Expanded 14,8,1,0.7115384615384616,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,8,2,0.7388663967611336,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,8,3,0.694331983805668,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,8,4,0.6727272727272727,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,8,5,0.7023376623376624,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Expanded 14,9,1,0.667004048582996,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,9,2,0.6988866396761134,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,9,3,0.7074898785425101,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,9,4,0.6644155844155845,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"
+Random Forest,Expanded 14,9,5,0.6987012987012987,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Expanded 14,10,1,0.7651821862348178,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,10,2,0.6260121457489879,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,10,3,0.7484817813765183,"{'model__max_features': 0.5, 'model__min_samples_leaf': 10}"
+Random Forest,Expanded 14,10,4,0.7475324675324676,"{'model__max_features': 0.5, 'model__min_samples_leaf': 20}"
+Random Forest,Expanded 14,10,5,0.6971428571428572,"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 5}"

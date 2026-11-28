@@ -1,7 +1,9 @@
 GAME,APPROACH,RMSE_million_USD,MAPE_%
 Genshin,ARIMA,6.96,28.29
+Genshin,ARIMAX (ARIMA with banner),6.16,27.28
 Genshin,LightGBM without banner,7.13,32.76
 Genshin,LightGBM with banner,6.43,30.32
 HSR,ARIMA,7.6,53.7
+HSR,ARIMAX (ARIMA with banner),5.97,35.45
 HSR,LightGBM without banner,8.19,58.36
 HSR,LightGBM with banner,8.24,54.9

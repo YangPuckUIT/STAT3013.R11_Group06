@@ -1,5 +1,7 @@
-GAME,COMPARED_WITH,RMSE_change_%,MAPE_change_pp
-Genshin,LightGBM without banner,-9.9,-2.4
-Genshin,ARIMA,-7.7,2.0
-HSR,LightGBM without banner,0.6,-3.5
-HSR,ARIMA,8.4,1.2
+GAME,MODEL,COMPARED_WITH,RMSE_change_%,MAPE_change_pp
+Genshin,ARIMAX (ARIMA with banner),ARIMA,-11.4,-1.0
+Genshin,LightGBM with banner,LightGBM without banner,-9.9,-2.4
+Genshin,LightGBM with banner,ARIMA,-7.7,2.0
+HSR,ARIMAX (ARIMA with banner),ARIMA,-21.4,-18.3
+HSR,LightGBM with banner,LightGBM without banner,0.6,-3.5
+HSR,LightGBM with banner,ARIMA,8.4,1.2

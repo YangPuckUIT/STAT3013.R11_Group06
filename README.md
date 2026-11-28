@@ -87,12 +87,12 @@ All tables and figures are written to `outputs/stage2/`.
 
 **Data.** Monthly GLOBAL mobile revenue (Sensor Tower estimates via revenue.ennead.cc, USD, excluding China): Genshin Impact 2022-12 to 2026-09 (46 months) and Honkai: Star Rail 2023-04 to 2026-09 (42 months). Banner variables (`BANNER`, `HOT_CHAR`, `PROMO_EVENT`, 0/1 per month) were coded by hand from public banner histories. Sources and coding rules: `Dataset/stage5_sources.md`.
 
-**Models.** ARIMA on log revenue, one model per game (baseline): ARIMA(1,1,2) for Genshin and ARIMA(0,1,1) for HSR, Ljung–Box p > 0.05 for both. ARIMAX uses the same orders with `BANNER`, `HOT_CHAR` and `PROMO_EVENT` as exogenous regressors (Ljung–Box p > 0.05 for both). LightGBM pooled over both games with revenue lags 1–3 and game, run without and with the banner variables (parameters fixed in advance, seed 42).
+**Models.** GLOBAL revenue is recorded in USD (tables and figures in million USD). ARIMA on y = log(GLOBAL), one model per game (baseline): ARIMA(1,1,2) for Genshin and ARIMA(0,1,1) for HSR, Ljung–Box p > 0.05 for both. ARIMAX uses the same orders with `BANNER`, `HOT_CHAR` and `PROMO_EVENT` as exogenous regressors (Ljung–Box p > 0.05 for both). LightGBM pooled over both games with revenue lags 1–3 and game, run without and with the banner variables (parameters fixed in advance, seed 42).
 
 | Approach | Input variables | Number |
 |---|---|---|
-| ARIMA | Past revenue of the same game only | 1 series |
-| ARIMAX | Past revenue + BANNER, HOT_CHAR, PROMO_EVENT | 1 series + 3 |
+| ARIMA | log(GLOBAL), the revenue series being forecast | 1 series |
+| ARIMAX | log(GLOBAL) + 3 exogenous variables: BANNER, HOT_CHAR, PROMO_EVENT | 1 series + 3 |
 | LightGBM without banner | LAG1, LAG2, LAG3, GAME | 4 |
 | LightGBM with banner | LAG1, LAG2, LAG3, GAME, BANNER, HOT_CHAR, PROMO_EVENT | 7 |
 
@@ -111,7 +111,7 @@ All tables and figures are written to `outputs/stage2/`.
 | HSR | LightGBM without banner | 8.19 | 58.4 |
 | HSR | LightGBM with banner | 8.24 | 54.9 |
 
-Adding the banner variables to ARIMA lowers RMSE by 11.4% for Genshin and 21.4% for HSR, and ARIMAX is the most accurate approach for both games. In LightGBM, banner variables lower Genshin RMSE by 9.9% but bring almost no change for HSR, where a new 5-star character debuts in 40 of 42 months. The individual ARIMAX banner coefficients are not statistically significant, so the gain comes from the variables together rather than from one clearly identified effect. MAPE is high for HSR because revenue fell to USD 5 million in 2026-01. With 12 evaluation months per game, these differences are tendencies, not firm conclusions.
+Adding the banner variables to ARIMA lowers RMSE by 11.4% for Genshin and 21.4% for HSR, and ARIMAX is the most accurate approach for both games. In LightGBM, banner variables lower Genshin RMSE by 9.9% but bring almost no change for HSR, where a new 5-star character debuts in 40 of 42 months. The individual ARIMAX banner coefficients are not statistically significant at the 5% level (the largest, PROMO_EVENT for HSR = 0.60, means about 80% higher revenue in event months by the model's estimate with the other variables held constant, p = 0.084), so the gain comes from the variables together rather than from one clearly identified effect. MAPE is high for HSR because revenue fell to USD 5 million in 2026-01. With 12 evaluation months per game, these differences are tendencies, not firm conclusions.
 
 All tables and figures are written to `outputs/stage5/`.
 
